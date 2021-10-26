@@ -1,3 +1,1 @@
-local SupportedGame = {game.GameId}
-
-print(SupportedGame)
+print(game.GameId)

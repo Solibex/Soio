@@ -1,1 +1,1 @@
-print(game.JobId)
+print(game.PlaceId)

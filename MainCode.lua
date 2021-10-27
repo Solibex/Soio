@@ -45,5 +45,5 @@ TextButton.Text = "X"
 TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton.TextSize = 14.000
 TextButton.MouseButton1Down:connect(function()
-	ScreenGui.Visible = false
+	ScreenGui:Destroy()
 end)

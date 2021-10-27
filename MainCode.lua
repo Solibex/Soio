@@ -6,7 +6,7 @@
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local title = Instance.new("TextLabel")
-local TextButton = Instance.new("TextButton")
+local ExitButton = Instance.new("TextButton")
 
 --Properties:
 
@@ -34,16 +34,18 @@ title.Font = Enum.Font.Gotham
 title.Text = "Soio"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 14.000
+-- Exit Button
 
-TextButton.Parent = main
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.Position = UDim2.new(0.921688437, 0, -0.0311329365, 0)
-TextButton.Size = UDim2.new(0, 27, 0, 27)
-TextButton.Font = Enum.Font.Sarpanch
-TextButton.Text = "X"
-TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextButton.TextSize = 14.000
-TextButton.MouseButton1Down:connect(function()
+ExitButton.Parent = main
+ExitButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExitButton.BackgroundTransparency = 1.000
+ExitButton.Position = UDim2.new(0.921688437, 0, -0.0311329365, 0)
+ExitButton.Size = UDim2.new(0, 27, 0, 27)
+ExitButton.Font = Enum.Font.Sarpanch
+ExitButton.Text = "X"
+ExitButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+ExitButton.TextSize = 14.000
+ExitButton.MouseButton1Down:Connect(function()
 	ScreenGui:Destroy()
 end)
+-- i swear to god developer you cant make this code patched
